@@ -26,3 +26,7 @@
 
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;; easy to use, but still sophisticated undo/redo tree
+(require 'undo-tree)
+(undo-tree-mode 1)
