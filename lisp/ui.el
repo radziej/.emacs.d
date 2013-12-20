@@ -38,7 +38,8 @@
 ;; use zenburn as the default theme
 (load-theme 'zenburn t)
 
-;; enable powerline
+;; enable well structured mode-line
+(require 'powerline)
 (powerline-default-theme)
 
 ;; use solarized-dark/light as the default theme
