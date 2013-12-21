@@ -1,3 +1,6 @@
+;; Necessary to enable M-a and M-e to work with 1 space
+(setq sentence-end-double-space nil)
+
 ;; more extensive apropos search
 (setq apropos-do-all t)
 
@@ -30,3 +33,5 @@
 ;; easy to use, but still sophisticated undo/redo tree
 (require 'undo-tree)
 (undo-tree-mode 1)
+
+(provide 'editor-setup)

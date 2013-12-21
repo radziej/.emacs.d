@@ -3,7 +3,8 @@
   (tool-bar-mode -1))
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
-(menu-bar-mode 1)
+(when (fboundp 'menu-bar-mode)
+  (menu-bar-mode 1))
 
 ;; the blinking cursor is nothing, but an annoyance
 (blink-cursor-mode -1)
@@ -20,7 +21,6 @@
 (size-indication-mode t)
 
 ;; make the fringe (gutter) smaller
-;; the argument is a width in pixels (the default is 8)
 (if (fboundp 'fringe-mode)
     (fringe-mode 4))
 
@@ -50,3 +50,4 @@
 ;; (setq solarized-high-contrast-mode-line t)
 ;; (load-theme 'solarized-dark t)
 
+(provide 'ui-setup)

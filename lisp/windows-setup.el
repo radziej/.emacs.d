@@ -1,5 +1,7 @@
-;; Necessary to enable M-a and M-e to work with 1 space
-(setq sentence-end-double-space nil)
+;; File is only loaded on windows machines
+
+;; Viewer for TeX-previews in Emacs
+(add-to-list 'exec-path "C:/Program Files (x86)/Ghostscript/gs9.10/bin")
 
 ;; Hunspell
 (add-to-list 'exec-path "C:/Program Files (x86)/Emacs/hunspell/bin")
@@ -23,3 +25,5 @@
         ("british" ; British English
          "[A-Za-z]" "[^A-Za-z]" "[']" t
          ("-d" "en_GB" "-i" "utf-8") nil utf-8)))))
+
+(provide 'windows-setup)
