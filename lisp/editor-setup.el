@@ -32,6 +32,6 @@
 
 ;; easy to use, but still sophisticated undo/redo tree
 (require 'undo-tree)
-(undo-tree-mode 1)
+(global-undo-tree-mode)
 
 (provide 'editor-setup)
