@@ -6,6 +6,9 @@
 (when (fboundp 'menu-bar-mode)
   (menu-bar-mode 1))
 
+;; changes warning from system beep to visual flash
+(setq visible-bell 1)
+
 ;; the blinking cursor is nothing, but an annoyance
 (blink-cursor-mode -1)
 
