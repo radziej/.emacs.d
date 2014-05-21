@@ -1,5 +1,8 @@
-;; Necessary to enable M-a and M-e to work with 1 space
+;; enable M-a and M-e to work with 1 space
 (setq sentence-end-double-space nil)
+
+;; default filling up to column 80 instead of 70
+(setq-default fill-column 80)
 
 ;; more extensive apropos search
 (setq apropos-do-all t)
