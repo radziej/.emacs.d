@@ -1,7 +1,8 @@
 ;; File is only loaded on windows machines
 
 ;; cygwin binaries directory - git
-(add-to-list 'exec-path "C:/ProgramData/Cygwin/bin")
+ (if (file-directory-p "C:/ProgramData/Cygwin/bin")
+      (add-to-list 'exec-path "C:/ProgramData/Cygwin/bin"))
 
 ;; Viewer for TeX-previews in Emacs
 (add-to-list 'exec-path "C:/Program Files (x86)/Ghostscript/gs9.10/bin")

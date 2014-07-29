@@ -8,8 +8,8 @@
 (setq mouse-yank-at-point t)
 
 ;; better autocompletion for file operations
-(ido-mode t)
-(setq ido-enable-flex-matching t)
+;; (ido-mode t)
+;; (setq ido-enable-flex-matching t)
 
 ;; better completion
 (global-set-key (kbd "M-/") 'hippie-expand)

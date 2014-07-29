@@ -7,7 +7,7 @@
 
 
 (defvar ensure-packages-list
-  '(ace-jump-mode powerline undo-tree zenburn-theme)
+  '(ace-jump-mode powerline undo-tree zenburn-theme helm)
   "List of packages that are ensured to be installed.")
  
 (defun ensure-packages-p (list-of-packages)
