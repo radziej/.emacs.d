@@ -17,6 +17,7 @@
 (require 'ui-setup)
 (require 'editor-setup)
 (require 'tex-setup)
+(require 'helm-setup)
 
 (if (equal system-type 'windows-nt)
     (require 'windows-setup))
