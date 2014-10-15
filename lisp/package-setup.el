@@ -2,12 +2,15 @@
 
 (require 'package)
 (add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  '("melpa" . "http://melpa.milkbox.net/packages/") t) ;; include melpa as a package repository
 (package-initialize)
 
 
 (defvar ensure-packages-list
-  '(ace-jump-mode powerline undo-tree zenburn-theme helm)
+  '(ace-jump-mode
+    undo-tree helm
+    zenburn-theme
+    powerline)
   "List of packages that are ensured to be installed.")
  
 (defun ensure-packages-p (list-of-packages)
