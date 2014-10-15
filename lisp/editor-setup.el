@@ -1,3 +1,11 @@
+;; UTF-8 as default encoding
+(set-language-environment "utf-8")
+
+;; don't use tabs to indent
+(setq-default indent-tabs-mode nil)
+;; but maintain correct appearance
+(setq-default tab-width 8)
+
 ;; enable M-a and M-e to work with 1 space
 (setq sentence-end-double-space nil)
 
@@ -10,12 +18,19 @@
 ;; yank at cursor
 (setq mouse-yank-at-point t)
 
-;; better autocompletion for file operations
-;; (ido-mode t)
-;; (setq ido-enable-flex-matching t)
-
 ;; better completion
 (global-set-key (kbd "M-/") 'hippie-expand)
+;; different order of attempted completions
+(setq hippie-expand-try-functions-list '(try-expand-dabbrev
+					 try-expand-dabbrev-all-buffers
+					 try-expand-dabbrev-from-kill
+					 try-complete-file-name-partially
+					 try-complete-file-name
+					 try-expand-all-abbrevs
+					 try-expand-list
+					 try-expand-line
+					 try-complete-lisp-symbol-partially
+					 try-complete-lisp-symbol))
 
 ;; unique buffer names - no <2>foo.bar
 (require 'uniquify)
