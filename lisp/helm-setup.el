@@ -58,4 +58,9 @@
 
 (helm-mode 1)
 
+;; remove given modes from helm completion
+(add-to-list 'helm-completing-read-handlers-alist '(LaTeX-environment . nil))
+(add-to-list 'helm-completing-read-handlers-alist '(LaTeX-section . nil))
+(add-to-list 'helm-completing-read-handlers-alist '(TeX-command-master . nil))
+
 (provide 'helm-setup)
